@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="365.js"></script>
+
+</head>
+<body>
+    <nav>
+        <a href="/index.html"><button><strong>365</strong></button></a>
+        <a class="a1" href="/index1.html" target="_blank">Movies</a>
+        <a class="a1" href="#">TV Series</a>
+        <a class="a1" href="#">Audio</a>
+    </nav>
+
+    <section>
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 5</div>
+              <img src="https://wallup.net/wp-content/uploads/2016/01/52059-movies-Batman-Batman_Begins-Rachel_Dawes.jpg" style="width:100%; height:800px;">
+              <div class="text">BatMan.</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 5</div>
+              <img src="https://public-assets-pressexpress.s3.amazonaws.com/assets/releases/docimages/2021/03/25/SML_S1_3840x2160_rzkxqbf5.jpg" style="width:100%; height:800px;">
+              <div class="text">Super Man.</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 5</div>
+              <img src="https://cdn.wallpapersafari.com/99/78/1oe2VL.jpg" style="width:100%; height:800px;">
+              <div class="text">Aquaman.</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 5</div>
+                <img src="https://wallpapercave.com/wp/wp1952090.jpg" style="width:100%; height:800px;">
+                <div class="text">Wonder Woman.</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 5</div>
+                <img src="https://images-na.ssl-images-amazon.com/images/S/sgp-catalog-images/region_US/wb-2082159_6000122618-Full-Image_GalleryCover-en-US-1573816550159._UY500_UX667_RI_V84e80b5ce3603534c1807c6918758129_TTW_.jpg" style="width:100%; height:800px;">
+                <div class="text">Flash.</div>
+            </div>
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </section>
+
+    <section>
+        <nav style="text-align: center; padding-top: 5px;">
+            <div class="dropdown">
+                <button class="dropbtn">Genre</button>
+                <div class="dropdown-content">
+                    <button onclick="Sort_genre('All')" class="genre_button">All</button>
+                  <button onclick="Sort_genre('Drama')" class="genre_button">Drama</button>
+                  <button onclick="Sort_genre('Action')" class="genre_button">Action</button>
+                  <button onclick="Sort_genre('Crime Film')" class="genre_button">Crime Film</button>
+                  <button onclick="Sort_genre('SuperHero')" class="genre_button">SuperHero</button>
+                  <button onclick="Sort_genre('Science fiction')" class="genre_button">Science fiction</button>
+                </div>
+            </div>
+            <input onkeyup="Searching()" id="search_for" type="text" placeholder="Search for movies here......">
+            <button style="background-color: gray; border-radius: 50%;" type="submit"><i style="color: white;" class="fa fa-search"></i></button>
+        </nav>
+        <div class="container">
+            <p><strong>Movies</strong></p>
+            <hr style="color: gray;">
+        </div>
+        <ul id="Movies" class="wrapper">
+            <li class="image">
+                <h1 style="display: none;">Joker</h1>
+                <img style="width: 200px; height: 250px;" src="https://www.joblo.com/assets/images/joblo/posters/2019/08/joker-final-poster.jpg" alt="Joker Poster">
+
+                <p class="img_text">Thriller,Action, Drama, Crime film, Psychological Thriller</p>
+            </li>
+
+            <li class="image">
+                <h1 style="display: none;">The Dark Knight</h1>
+                <img style="width: 200px; height: 250px;" src="https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_.jpg" alt="The Dark Knight Poster">
+
+                <p class="img_text">Action, SuperHero, Thriller, Adventure, Crime film, Noir, Mystery, Drama, neo-noir.</p>
+            </li>
+
+            <li class="image">
+                <h1 style="display: none;">The Raid Redemption</h1>
+                <img style="width: 200px; height: 250px;" src="https://m.media-amazon.com/images/I/51wlDopGRSL._AC_SS450_.jpg" alt="The Raid Redemption Poster">
+
+                <p class="img_text">Action, Marshal Arts, Crime film,Thriller</p>
+            </li>
+
+            <li class="image">
+                <h1 style="display: none;">Inception</h1>
+                <img style="width: 200px; height: 250px;" src="https://www.joblo.com/assets/images/oldsite/posters/images/full/inception-poster3-2_thumb.jpg" alt="Inception Poster">
+
+                <p class="img_text">Action, Science fiction,Thriller, Drama, Heist, Adventure.</p>
+            </li>
+
+            <li class="image">
+                <h1 style="display: none;">Edge of Tomorrow</h1>
+                <img style="width: 200px; height: 250px;" src="https://m.media-amazon.com/images/M/MV5BMTc5OTk4MTM3M15BMl5BanBnXkFtZTgwODcxNjg3MDE@._V1_.jpg" alt="Edge of Tomorrow Poster">
+
+                <p class="img_text">Action, Science fiction, Adventure.</p>
+            </li>
+
+            <li class="image">
+                <h1 style="display: none;">The Tomorrow War</h1>
+                <img style="width: 200px; height: 250px;" src="https://m.media-amazon.com/images/M/MV5BNTI2YTI0MWEtNGQ4OS00ODIzLWE1MWEtZGJiN2E3ZmM1OWI1XkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_QL75_UX190_CR0,0,190,281_.jpg" alt="The Tomorrow War Poster">
+
+                <p class="img_text">War, Action, Science fiction, Adventure, Fantasy.</p>
+            </li>
+
+            <li class="image">
+                <h1 style="display: none;">Space Sweepers</h1>
+                <img style="width: 200px; height: 250px;" src="https://m.media-amazon.com/images/M/MV5BZTUxN2M3ZWYtMzc1MC00NTc4LWFhZDItMzViZDg2NmFjMzBhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg" alt="Space Sweepers Poster">
+
+                <p class="img_text">Science fiction, Space Opera.</p>
+            </li>
+
+            <li class="image">
+                <h1 style="display: none;">Outside The Wire</h1>
+                <img style="width: 200px; height: 250px;" src="https://m.media-amazon.com/images/M/MV5BNmM2MWQ0NzktNzU0OS00MjYzLTkxNDYtMzliNTA5ZmNkMmZlXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg" alt="Outside The Wire Poster">
+
+                <p class="img_text">Action, Adventure, Fantasy, Science fiction, Motion.</p>
+            </li>
+
+            <li class="image">
+                <h1 style="display: none;">Gundala</h1>
+                <img style="width: 200px; height: 250px;" src="https://m.media-amazon.com/images/M/MV5BYjk5MWVlMWUtZmJlYi00ZGQ0LWJkZDItOGViZjdhOTI4YWE5XkEyXkFqcGdeQXVyNDA1NDA2NTk@._V1_.jpg" alt="Gundala Poster">
+
+                <p class="img_text">Action, Drama, Science fiction, Adventure, Superhero, new-noir</p>
+            </li>
+
+            <li class="image">
+                <h1 style="display: none;">Coma</h1>
+                <img style="width: 200px; height: 250px;" src="https://m.media-amazon.com/images/M/MV5BNDE5ODg1Y2MtNmQ4MC00M2U4LTk2YTktMGI5ZGJmNTExNjE1XkEyXkFqcGdeQXVyODc0OTEyNDU@._V1_.jpg" alt="Coma Poster">
+
+                <p class="img_text">Action, Fantasy,Science fiction, Adventure.</p>
+            </li>
+
+            <li class="image">
+                <h1 style="display: none;">Zack Snyder's Justice League</h1>
+                <img style="width: 200px; height: 250px;" src="https://m.media-amazon.com/images/M/MV5BYjI3NDg0ZTEtMDEwYS00YWMyLThjYjktMTNlM2NmYjc1OGRiXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_.jpg" alt="Zack Snyder's Justice League Poster">
+
+                <p class="img_text">Action, SuperHero, Fantasy, Science fiction, Adventure.</p>
+            </li>
+
+            <li class="image">
+                <h1 style="display: none;">What happened To Monday</h1>
+                <img style="width: 200px; height: 250px;" src="https://m.media-amazon.com/images/M/MV5BMjE4MDQxMDg3MF5BMl5BanBnXkFtZTgwNjQ0MTcwMzI@._V1_FMjpg_UX1000_.jpg" alt="What happened To Monday Poster">
+
+                <p class="img_text">Action, Science fiction, Thriller, Drama, Advnture, Mystery, Crime Film.</p>
+            </li>
+
+            <li class="image">
+                <h1 style="display: none;">Arrival</h1>
+                <img style="width: 200px; height: 250px;" src="https://m.media-amazon.com/images/M/MV5BMTExMzU0ODcxNDheQTJeQWpwZ15BbWU4MDE1OTI4MzAy._V1_.jpg" alt="Arrival Poster">
+
+                <p class="img_text">Thriller, Drama, Science fiction, Mystery.</p>
+            </li>
+
+            <li class="image">
+                <h1 style="display: none;">The Shawshank Redemption</h1>
+                <img style="width: 200px; height: 250px;" src="https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UY1200_CR89,0,630,1200_AL_.jpg" alt="The Shawshank Redemption Poster">
+
+                <p class="img_text">Prison, Mystery, Drama, Crime fiction.</p>
+            </li>
+
+            <li class="image">
+                <h1 style="display: none;">Dunkrik</h1>
+                <img style="width: 200px; height: 250px;" src="https://m.media-amazon.com/images/M/MV5BN2YyZjQ0NTEtNzU5MS00NGZkLTg0MTEtYzJmMWY3MWRhZjM2XkEyXkFqcGdeQXVyMDA4NzMyOA@@._V1_.jpg" alt="Dunkrik Poster">
+
+                <p class="img_text">Drama, War, Action, Thriller,Historical Film, Historical Fiction.</p>
+            </li>
+
+            <li class="image">
+                <h1 style="display: none;">Leave No Trace</h1>
+                <img style="width: 200px; height: 250px;" src="https://m.media-amazon.com/images/M/MV5BMjE3OTI1MTU0OV5BMl5BanBnXkFtZTgwNTg1MzkzNTM@._V1_.jpg" alt="Leave No Trace Poster">
+
+                <p class="img_text">Drama.</p>
+            </li>
+
+            <li class="image">
+                <h1 style="display: none;">Parasire</h1>
+                <img style="width: 200px; height: 250px;" src="https://m.media-amazon.com/images/M/MV5BYWZjMjk3ZTItODQ2ZC00NTY5LWE0ZDYtZTI3MjcwN2Q5NTVkXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_.jpg" alt="Parasire Poster">
+
+                <p class="img_text">Thriller, Drama, Comedy,Dark Comedy, Mystery.</p>
+            </li>
+
+            <li class="image"> 
+                <h1 style="display: none;">The Isishman</h1>
+                <img style="width: 200px; height: 250px;" src="https://m.media-amazon.com/images/M/MV5BMGUyM2ZiZmUtMWY0OC00NTQ4LThkOGUtNjY2NjkzMDJiMWMwXkEyXkFqcGdeQXVyMzY0MTE3NzU@._V1_.jpg" alt="the Isishman Poster">
+
+                <p class="img_text">Mafia, Drama, Epic, Crime Film.</p>
+            </li>
+        </ul>
+        </section>
+
+        <footer>
+            <nav style="text-align:center">
+                <button><strong>365</strong></button>
+                <a class="a1" href="#">Powered by 365 Entertainment Portal 2021. All Rights Reserved.</a>
+            </nav>
+        </footer>
+</body>
+</html>
