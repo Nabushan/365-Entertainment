@@ -1,4 +1,4 @@
 # 365-Entertainment
-A Simple Moview Website using HTML,CSS,js
+A Simple Movie Website using HTML,CSS,js
 
 This is my first project using Java Script :).
